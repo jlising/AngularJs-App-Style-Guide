@@ -9,7 +9,7 @@
 	function ResourceFactory($resource){	
 				
 		//Build the class
-		function ExtendeResource (){
+		function ExtendedResource (){
 			//Apply the arguments from the extending class to $resource
 			var Resource = $resource.apply(this, arguments);
 			
@@ -21,6 +21,7 @@
 		    return Resource;
 		}
 		
-		return ExtendeResource;
+		//Return as service
+		return ExtendedResource;
 	}	
 })(); 

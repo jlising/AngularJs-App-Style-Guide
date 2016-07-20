@@ -1,0 +1,24 @@
+{
+  "name": "myproject",
+  "description": "Test",
+  "main": "index.js",
+  "authors": [
+    "Jess Lising <jlising@owens.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.2.28",
+    "angular-bootstrap": "0.12.0",
+    "bootstrap-css-only": "3.3.4",
+    "angular-sanitize": "1.3.20",
+    "angular-ui-router": "0.2.15"
+  }
+}

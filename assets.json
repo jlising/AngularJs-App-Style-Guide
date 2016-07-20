@@ -1,0 +1,25 @@
+{
+  "vendorJs": [
+    "./bower_components/angular/angular.min.js",
+    "./bower_components/angular-sanitize/angular-sanitize.min.js",
+    "./bower_components/angular-ui-router/release/angular-ui-router.min.js",
+    "./bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"
+  ],
+  
+  "vendorCss": [
+    "./bower_components/bootstrap-css-only/css/bootstrap.min.css"
+  ],  
+  "appJs": [
+    "./module/app.js",
+    "./module/core/*.js",
+    "./module/**/**/*.js"
+  ],
+
+  "images": [
+    "./lib/images/*"
+  ],
+  
+  "appCss": [
+    "./lib/css/*.css"
+  ]
+}

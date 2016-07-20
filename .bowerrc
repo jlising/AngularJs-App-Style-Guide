@@ -1,0 +1,7 @@
+{
+"directory": "./bower_components",
+ "analytics": false,
+ "timeout": 120000,
+ "ignoredDependencies": [
+   "bootstrap-less-only"
+ ]}

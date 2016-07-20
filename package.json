@@ -1,5 +1,5 @@
 {
-  "name": "myproject",
+  "name": "angularjs-app-style-guide",
   "version": "1.0.0",
   "description": "Test",
   "main": "index.js",
@@ -32,6 +32,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Jesus Lising",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlising/AngularJs-App-Style-Guide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jlising/AngularJs-App-Style-Guide/issues"
+  },
+  "homepage": "https://github.com/jlising/AngularJs-App-Style-Guide#readme"
 }

@@ -1,18 +1,19 @@
 {
-  "name": "myproject",
-  "description": "Test",
+  "name": "angularjs-app-style-guide",
+  "description": "AngularJs App Style Guide",
   "main": "index.js",
   "authors": [
-    "Jess Lising <jlising@owens.com>"
+    "Jesus Lising"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/jlising/AngularJs-App-Style-Guide",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "./bower_components"
   ],
   "dependencies": {
     "angular": "1.2.28",

@@ -4,9 +4,9 @@
 	angular.module('core.module')
 		.controller('HomeController', HomeController);
 	
-	HomeController.$inject = ['$log'];
+	HomeController.$inject = ['$log', 'SampleService'];
 	
-	function HomeController($log){
+	function HomeController($log, SampleService){
 		//ControllerAs scope variable
 		var homeController = this;		
 		
@@ -18,6 +18,9 @@
 			homeController.message = "Hello!";
 			$log.debug("Hello!");
 		};
+		
+		SampleService.customMethod();
+		SampleService.myCommonFunction();
 		
 		homeController.hello();
 	}

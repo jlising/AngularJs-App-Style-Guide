@@ -7,7 +7,8 @@
     			  [	'ui.router',
     	            "ui.bootstrap",
     			   	'ngSanitize',
-    	         
+    			   	'ngResource',
+    			   	
     			   	'core.module',
     			   	'mymodule.module']);
       });

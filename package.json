@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Test",
   "main": "index.js",
-  "dependencies": {
+  "devDependencies": {
     "bower": "1.4.1",
     "del": "1.2.0",
     "git-rev": "0.2.1",
@@ -28,7 +28,7 @@
     "swagger-parser": "3.4.0",
     "yargs": "3.25.0"
   },
-  "devDependencies": {},
+  "dependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

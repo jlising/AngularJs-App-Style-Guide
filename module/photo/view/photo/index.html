@@ -1,0 +1,30 @@
+<div class="container">
+	 <div class="row">
+	 <h3 class="page-title">Photo Album</h3>
+	
+	 <div class="pagination">
+     	<button data-ng-disabled="photoController.currentPage == 0" data-ng-click="photoController.currentPage = photoController.currentPage - 1">Previous</button>
+    	{{photoController.currentPage + 1 }} / {{photoController.numberOfPages}}
+     	<button data-ng-disabled="photoController.currentPage >= photoController.photos.length / photoController.pageSize - 1" data-ng-click="photoController.currentPage = photoController.currentPage + 1">Next</button>
+	 </div>
+	 <div class="clearfix"></div>
+	 <div class="col-xs-11 col-sm-5 col-md-3 col-lg-3" data-ng-repeat="photo in photoController.photos | startFrom : photoController.currentPage * photoController.pageSize | limitTo : photoController.pageSize">
+	 
+	 	<article class="col-item">
+	 		<div class="info">
+	 			<div class="row">
+	 				<div class="price-details col-md-6 ">
+	 					<p class="details">
+	 						<img class="thumbnail" alt="{{photo.title}}" src="{{photo.thumbnailUrl}}"/>
+	 					</p>
+	 				</div>
+	 			</div>
+	 			<br>
+	 			<div class="separator clear-left">
+	 				<p>{{photo.title}}</p>
+	 			</div>
+	 			<div class="clearfix"></div>
+	 		</div>
+	 	</article>
+	 </div>
+ </div>

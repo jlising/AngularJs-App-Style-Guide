@@ -16,7 +16,8 @@ gulp.task('clean', function(callback) {
 
 //Copy third party js
 gulp.task('copy-vendors-js', function() {
-	return gulp.src(assets.vendorJs).pipe(concat('vendor.js'))
+	return gulp.src(assets.vendorJs)
+		.pipe(concat('vendor.js'))
 		.pipe(gulp.dest('dist/js'));
 });
 
@@ -28,14 +29,29 @@ gulp.task('copy-vendors-css', function() {
 
 //Copy app js
 gulp.task('copy-app-js', function() {
-	return gulp.src(assets.appJs).pipe(concat('app.js'))
+	return gulp.src(assets.appJs)
+		.pipe(uglify()).pipe(concat('app.js'))
 		.pipe(gulp.dest('dist/js'));
 });
 
 //Copy app css
 gulp.task('copy-app-css', function() {
-	return gulp.src(assets.appCss).pipe(concat('app.css'))
+	return gulp.src(assets.appCss)
+		//.pipe(minify())
+		.pipe(concat('app.css'))
 		.pipe(gulp.dest('dist/css'));
+});
+
+//Copy fonts
+gulp.task('copy-fonts', function() {
+	return gulp.src(assets.fonts)
+		.pipe(gulp.dest('dist/fonts'));
+});
+
+//Copy images
+gulp.task('copy-images', function() {
+	return gulp.src(assets.images)
+		.pipe(gulp.dest('dist/images'));
 });
 
 //Copy html
@@ -67,7 +83,7 @@ gulp.task('local-server', function() {
 
     var contextPath = "";
 
-    var target = "http://localhost:8080";//This is the server hosting the REST service
+    var target = "http://jsonplaceholder.typicode.com";//This is the server hosting the REST service
 
     var redirectStatusCode = [301, 302, 307, 308];
 
@@ -106,5 +122,5 @@ gulp.task('local-server', function() {
 //Default task
 gulp.task("default",function(){
 	return runSequence(['clean'],
-				['copy-vendors-js', 'copy-vendors-css','copy-app-js', 'copy-app-css', 'copy-html'], ['local-server'], ['watch-asset']);
+				['copy-vendors-js', 'copy-vendors-css','copy-app-js', 'copy-app-css', 'copy-html','copy-fonts','copy-images'], ['local-server'], ['watch-asset']);
 });

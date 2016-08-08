@@ -19,9 +19,9 @@
 	        })
 	        .state('home', {
                 url: '/',
-                templateUrl: './module/core/view/home/index.html',
-                controller: "HomeController",
-                controllerAs: "homeController"
+                templateUrl: './module/core/view/default/index.html',
+                controller: "DefaultController",
+                controllerAs: "defaultController"
             });
 	}
 })();

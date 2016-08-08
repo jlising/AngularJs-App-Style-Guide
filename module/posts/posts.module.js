@@ -2,5 +2,5 @@
 (function(){
 	'use strict';
 	
-	 angular.module("mymodule.module", []);
+	 angular.module("posts.module", []);
 })();

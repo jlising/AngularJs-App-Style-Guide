@@ -2,5 +2,8 @@
 (function(){
 	'use strict';
 	
-	 angular.module("core.module", []);
+	 angular.module("core.module", [])
+		 .constant( 'ENVIRONMENT', {
+			 proxyUrl : '/proxy'
+		 });
 })();

@@ -10,6 +10,7 @@
     			   	'ngResource',
     			   	
     			   	'core.module',
-    			   	'mymodule.module']);
+    			   	'photo.module',
+    			   	'posts.module']);
       });
 })();

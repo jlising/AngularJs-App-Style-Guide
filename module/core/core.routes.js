@@ -9,7 +9,7 @@
 	
 	function routeConfig($stateProvider, $urlRouterProvider){
 		$urlRouterProvider
-	        .when('', '/')	        
+	        .when('', '/posts')
 	        .otherwise('/page-not-found');
 		
 		$stateProvider
